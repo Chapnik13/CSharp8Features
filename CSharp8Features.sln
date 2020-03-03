@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp8Features", "CSharp8Features\CSharp8Features.csproj", "{70EA4D9A-13CB-4BAC-85E6-84AC99E4180C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndGame", "EndGame\EndGame.csproj", "{8D509400-6B60-46DC-A5C7-D45882722B81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70EA4D9A-13CB-4BAC-85E6-84AC99E4180C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EA4D9A-13CB-4BAC-85E6-84AC99E4180C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EA4D9A-13CB-4BAC-85E6-84AC99E4180C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EA4D9A-13CB-4BAC-85E6-84AC99E4180C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D509400-6B60-46DC-A5C7-D45882722B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D509400-6B60-46DC-A5C7-D45882722B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D509400-6B60-46DC-A5C7-D45882722B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D509400-6B60-46DC-A5C7-D45882722B81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A663DCE2-2379-418C-BAF5-30308122C38B}
+	EndGlobalSection
+EndGlobal
