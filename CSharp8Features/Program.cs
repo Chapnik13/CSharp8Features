@@ -14,7 +14,9 @@ namespace CSharp8Features
 
 
             //Sequence
-            Sequence.PrintSequence();
+            await Sequence.PrintSequence();
+
+            Console.ReadKey();
 
             var words = new string[]
             {

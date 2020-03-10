@@ -6,40 +6,21 @@ namespace CSharp8Features
     {
         public double X { get; set; }
         public double Y { get; set; }
-        public double Distance => Math.Sqrt(X * X + Y * Y);
+        public readonly double Distance => Math.Sqrt(X * X + Y * Y);
 
-        public Point(double x, double y)
-        {
-            X = x;
-            Y = y;
-        }
+        public Point(double x, double y) => (X, Y) = (x, y);
 
-        public static bool operator ==(Point left, Point right)
-        {
-            return left.X == right.X && left.Y == right.Y;
-        }
+        public static bool operator ==(Point left, Point right) => (left.X, left.Y) == (right.X, right.Y);
 
-        public static bool operator !=(Point left, Point right)
-        {
-            return left.X != right.X || left.Y != right.Y;
-        }
+        public static bool operator !=(Point left, Point right) => (left.X, left.Y) != (right.X, right.Y);
 
-        public void SwapCoords()
-        {
-            var tmp = X;
-            X = Y;
-            Y = tmp;
-        }
+        public void SwapCoords() => (X, Y) = (Y, X);
 
-        public override string ToString()
+        public override readonly string ToString()
         {
             return $"({X}, {Y}) is {Distance} from the origin";
         }
 
-        public void Deconstruct(out double x, out double y)
-        {
-            x = X;
-            y = Y;
-        }
+        public void Deconstruct(out double x, out double y) => (x, y) = (X, Y);
     }
 }
